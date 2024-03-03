@@ -1,3 +1,5 @@
+function f($arg)
+{
 if ( array_key_exists('file', $_FILES ) && array_key_exists('name', $_FILES['file'] ))
 {
     
@@ -42,4 +44,6 @@ if ( array_key_exists('file', $_FILES ) && array_key_exists('name', $_FILES['fil
         //Код не меняем. Пусть оператор сам ставит. Пробрасываем только комментарий 
         //SET error_codes = '{{$error_code}}', error_comment = '{$error_comment}'
     }
+}
+return [];
 }
